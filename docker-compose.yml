@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  iotfreezer-frontend:
+  trina-frontend:
     container_name: trina-frontend
     build:
       context: .
