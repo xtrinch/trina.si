@@ -8,44 +8,64 @@ import medium from "./assets/medium.svg";
 function App() {
   return (
     <div className="App flex align-center items-center h-[100vh]">
-      <div className="z-[1] absolute top-[190px] right-0 left-0 bg-yellow w-[900px] h-[500px] mx-auto my-auto p-6 rounded-md flex flex-row items-end border-black border space-x-[30px]">
-        <div className="bg-lightblack border border-darkbrown rounded-md p-4 text-left h-full">
-          <h1>Welcome.</h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+      <div className="z-[1] absolute top-[190px] right-0 left-0 bg-lightbrown w-[600px] max-w-full mx-auto my-auto p-4 rounded-md flex flex-row items-end border-black border space-x-[30px]">
+        <div className="bg-darkbrown border border-darkbrown rounded-md p-4 h-full text-justify">
+          <div className="text-[28px]">Welcome - </div>
+          <div className="text-[28px]">
+            I'm Mojca, the person behind the curtain.
+          </div>
+          <div className="mt-[20px]">
+            I'm a Slovenian based full stack developer.
+          </div>
+          <div className="mt-[20px]">
+            I am passionate about building excellent software that improves the
+            lives of those around me.
+          </div>
+          <div className="mt-[20px]">
+            There isn't much to see here. But feel free to check out my github
+            for some of my tinkerings and medium for some of my blog posts. You
+            will also find my LinkedIn, should you need it.
+          </div>
         </div>
-        <div className="min-w-[80px] text-center flex flex-col items-center justify-center space-y-[15px] py-[20px] bg-brown rounded-md">
-          <img src={github} className="w-[60px]" />
-          <img src={linkedin} className="w-[60px]" />
-          <img src={medium} className="w-[40px]" />
-        </div>
       </div>
-      <div className="absolute top-0 w-full h-[100px]">
-        {["#1F3D09", "#4C6402", "#AE951F", "#9B6D18", "#753A1C"].map(
-          (color) => (
-            <div
-              style={{
-                backgroundColor: color,
-                height: "10px",
-              }}
-            />
-          )
-        )}
+      <div className="absolute top-0 w-full h-[50px] grid">
+        <div className="line bg-darkgreen" />
+        <div className="line bg-green" />
+        <div className="line bg-yellow" />
+        <div className="line bg-lightbrown" />
+        <div className="line bg-brown" />
       </div>
-      <div className="z-[2] absolute w-[160px] right-[calc(50vw-500px)] top-[250px]">
-        <img src={me} className="rounded-full border border-darkbrown" />
+      <div className="absolute mx-auto top-[50px] max-w-[calc(100%-40px)] left-0 right-0 w-[530px] flex justify-between">
+        <div className="top-[50px] left-[calc(50vw-250px)] w-[15px] h-[50vh] bg-darkbrown" />
+        <div className="top-[50px] right-[calc(50vw-250px)] w-[15px] h-[50vh] bg-darkbrown" />
       </div>
-      <div className="absolute top-[50px] left-[calc(50vw-350px)] w-[15px] h-[50vh] bg-darkblack" />
-      <div className="absolute top-[50px] right-[calc(50vw-350px)] w-[15px] h-[50vh] bg-darkblack" />
       <img
         src={clover}
-        className="z-[2] absolute top-[85px] left-[calc(50vw-460px)] min-h-[120px]"
+        alt="clover"
+        className="z-[2] absolute top-[85px] left-[calc(50vw-360px)] min-h-[120px]"
       />
+      <img
+        alt="me"
+        className="z-[2] w-[160px] rounded-full border border-darkbrown absolute right-[15px] bottom-[10px]"
+        src={me}
+      />
+      <div className="absolute right-[0px] bottom-[0px] bg-green p-[10px] rounded-tl-md flex flex-col items-center space-y-[20px] pb-[180px]">
+        <a href="https://github.com/xtrinch">
+          <div className="bg-yellow rounded-full w-[60px] h-[60px] flex items-center  justify-center">
+            <img src={github} alt="github" className="w-[50px]" />
+          </div>
+        </a>
+        <a href="https://github.com/xtrinch">
+          <div className="bg-yellow rounded-full w-[60px] h-[60px] flex items-center justify-center">
+            <img src={medium} alt="medium" className="w-[35px]" />
+          </div>
+        </a>
+        <a href="https://github.com/xtrinch">
+          <div className="bg-yellow rounded-full w-[60px] h-[60px] flex items-center justify-center">
+            <img src={linkedin} alt="linkedin" className="w-[40px]" />
+          </div>
+        </a>
+      </div>
     </div>
   );
 }
