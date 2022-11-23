@@ -55,12 +55,12 @@ function App() {
             <img src={github} alt="github" className="w-[50px]" />
           </div>
         </a>
-        <a href="https://github.com/xtrinch">
+        <a href="https://medium.com/@mojca.rojko">
           <div className="bg-yellow rounded-full w-[60px] h-[60px] flex items-center justify-center">
             <img src={medium} alt="medium" className="w-[35px]" />
           </div>
         </a>
-        <a href="https://github.com/xtrinch">
+        <a href="https://www.linkedin.com/in/mojca-rojko-54438599/">
           <div className="bg-yellow rounded-full w-[60px] h-[60px] flex items-center justify-center">
             <img src={linkedin} alt="linkedin" className="w-[40px]" />
           </div>
